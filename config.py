@@ -1,6 +1,6 @@
 import tensorflow as tf
 
-### Hyperparameters
+### NNCLR Hyperparameters
 try:
     AUTOTUNE = tf.data.AUTOTUNE     
 except:
@@ -12,18 +12,6 @@ labelled_train_instances = 329
 
 temperature = 0.1        # the temperature for the softmax function in the contrastive loss
 queue_size = 1000        # the size of the queue for storing the feature vectors
-
-# Augmentation parameters for image data. Not used for sequence data.
-# contrastive_augmenter = {
-#     "brightness": 0.5,
-#     "name": "contrastive_augmenter",
-#     "scale": (0.2, 1.0),
-# }
-# classification_augmenter = {
-#     "brightness": 0.2,
-#     "name": "classification_augmenter",
-#     "scale": (0.5, 1.0),
-# }
 
 input_shape = (96, 1)       # the input shape of each sequence
 width = 64                  # the size of the output embedding vector for each sequence

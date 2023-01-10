@@ -3,7 +3,7 @@ from tensorflow import keras
 from tensorflow.keras import layers
 # from config import *
 from augmentations import *
-from encoder import encoder
+# from encoder import encoder
 
 class NNCLR(keras.Model):
     def __init__(
